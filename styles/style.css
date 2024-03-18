@@ -11,6 +11,7 @@
     --fondo_body: #9DB2BF;
     --fondo_cards: #DDE6ED;
     --font1: whitesmoke;
+    --alturaHeader: 30px;
     /* --font2: */
 }
 
@@ -22,18 +23,63 @@ body {
     font-family: "open sans";
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
+.header {
+    height: var(--alturaHeader);
     background-color: var(--fondo_nav);
-    color: var(--font1);
-    align-items: baseline;
+        padding: 0, 2rem;
 }
-
-.sin-config {
-    all: unset;
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 2rem;
+}
+.menu_hamburguesa{
+    display: none;
+}
+/* .menu_hamburguesa:hover + .ul_nav  {
+    height: calc(100vh - var(--alturaHeader)); 
+} */
+.menu_hamburguesa:checked + .ul_nav  {
+   height: calc(100vh - var(--alturaHeader)); 
+}
+.hamburguesa {    
+    color: var(--font1);
     cursor: pointer;
 }
+.ul_nav {
+    height: 0;
+    overflow: hidden;
+    color: var(--font1);
+    width: 100%;
+    position: absolute;
+    top: var(--alturaHeader);
+    left: 0;
+    background-color: var(--fondo_titulo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    transition: all .3s;
+}
+.li_nav {
+}
+.a_nav {
+    font-size: 2.5rem;
+    color: var(--font1);
+    font-weight: bold;
+}
+
+
+/* old .sin-config {
+    all: unset;
+    cursor: pointer;
+} */
 
 .intro {
     display: flex;
@@ -121,14 +167,11 @@ nav {
 
 }
 
-li a {
+/* li a {
     all: unset;
     cursor: pointer;
     padding: 10px;
-
-
-
-}
+} */
 
 li a:hover {
     color: var(--fondo_body);
@@ -147,10 +190,15 @@ h2 {
     padding-bottom: 5px;
 }
 
-li {
-    list-style-type: none;
-    text-align: justify;
+
+a {
+    text-decoration: none;
 }
+ol, ul {
+    list-style: none;
+}
+
+
 
 h3 {
     text-align: center;
