@@ -17,18 +17,18 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            
+
             <label for="menu_hamburguesa" class="hamburguesa">Menu</label>
             <input type="checkbox" class="menu_hamburguesa" name="" id="menu_hamburguesa">
-            
-            <ul class="ul_nav">
-                <li class="li_nav"><a href="index.html" class="a_nav">Home</a></li>
-                <li class="li_nav"><a href="./index.html/#Mis_proyectos" class="a_nav">Mis proyectos</a></li>
-                <li class="li_nav"><a href="#conoceme" class="a_nav">Conoceme</a></li>
-                <li class="li_nav"><a href="#gustos" class="a_nav">Mis gustos y talentos</a></li>
-                <li class="li_nav"><a href="#hobbies" class="a_nav">Mis hobbies</a></li>
-            </ul>
-
+            <div class="izq">
+                <ul class="ul_nav">
+                    <li class="li_nav"><a href="./index.html" class="a_nav">Home</a></li>
+                    <li class="li_nav"><a href="./#mis_proyectos" class="a_nav">Mis proyectos</a></li>
+                    <li class="li_nav"><a href="#conoceme" class="a_nav">Conoceme</a></li>
+                    <li class="li_nav"><a href="#talentos" class="a_nav">Mis talentos</a></li>
+                    <li class="li_nav"><a href="#hobbies" class="a_nav">Mis hobbies</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div class="intro">
@@ -46,25 +46,26 @@
         </div>
     </div>
 
-    <h2 id="Mis_proyectos">Mis proyectos</h2>
+    <h2 id="mis_proyectos">Mis proyectos</h2>
     <div class="cardContainer">
         <section class="cardpro ">
             <div class="card-image imgpro1"></div>
-            <h4>Diplomatura en Python en la <a href="https://utn.edu.ar/es/" target="_blank">UTN</a></h4>
-            <p>En este proyecto realice una API a traves de Python, SQL y una interfaz grafica con tkinter. <br>El
-                objetivo de la app es generar una aplicación donde uno pueda cargar sus rutinas de entrenamiento
-                en una la base de datos, dando las opciones de modificarlas y eliminarlas si es necesario.</p>
-            <a href="https://github.com/SebasBarrientos/Curso-Python-UTN" target="_blank">Link de Git</a>
+            <div class="texto-card">
+                <h4>Diplomatura en Python en la <a href="https://utn.edu.ar/es/" target="_blank">UTN</a></h4>
+                <p>En este proyecto realice una API a traves de Python, SQL y una interfaz grafica con tkinter. <br>El
+                    objetivo de la app es generar una aplicación donde uno pueda cargar sus rutinas de entrenamiento
+                    en una la base de datos, dando las opciones de modificarlas y eliminarlas si es necesario.</p>
+                <a href="https://github.com/SebasBarrientos/Curso-Python-UTN" target="_blank">Link de Git</a>
+            </div>
         </section>
 
 
-        <section class="cardpro" id="cardVideo">
-
-            <div class="card-image">
+        <section class="cardpro cardVideo">
+            <div class="card-image cardVideo">
                 <video class="video" src="./assets/proyectos/Correcto Funcionamiento de 'La Escaloneta'.mp4" controls
                     autoplay muted></video>
             </div>
-            <div>
+            <div class="texto-card">
                 <h4>Curso de pagina Web con Python dictado por <a href="https://www.coderhouse.com/es/"
                         target="_blank">Coderhouse</a>
                 </h4>
