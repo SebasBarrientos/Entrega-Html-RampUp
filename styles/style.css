@@ -10,12 +10,15 @@
     --fondo_titulo: #526D82;
     --fondo_body: #9DB2BF;
     --fondo_cards: #DDE6ED;
+    --font1: whitesmoke;
+    /* --font2: */
 }
 
 body {
     background-color: var(--fondo_body);
     display: flex;
     flex-direction: column;
+
     font-family: "open sans";
 }
 
@@ -23,21 +26,21 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: var(--fondo_nav);
-    color: whitesmoke;
+    color: var(--font1);
     align-items: baseline;
 }
 
 .sin-config {
     all: unset;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.intro{
+.intro {
     display: flex;
     justify-content: space-around;
-    background-color:var(--fondo_titulo);
+    background-color: var(--fondo_titulo);
     align-items: center;
-    color: whitesmoke;
+    color: var(--font1);
 }
 
 
@@ -50,7 +53,8 @@ nav {
     margin-top: 10px;
 
 }
-.titulo{
+
+.titulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,8 +65,8 @@ nav {
 
 }
 
-.invisible{
-    visibility:hidden;
+.invisible {
+    visibility: hidden;
     height: 133px;
     width: 100px;
 }
@@ -75,69 +79,83 @@ nav {
     margin-bottom: 10px;
 }
 
-.card {
-    height: 300px;
+.cardpro {
+    height: 390px;
     width: 600px;
     background-color: var(--fondo_cards);
     border-radius: 10px;
     padding: 5px;
 
 }
-#cardVideo{
+
+#cardVideo {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 320px;
 
 }
-.card-image{
+
+.card-image {
     height: 170px;
     margin-bottom: 15px;
     background-size: cover;
     margin-top: 3px;
 
 }
-.imgpro1{
+
+.imgpro1 {
     background-image: url("../assets/proyectos/App\ API\ MVC.png");
 }
 
-.video{
-    height: 170px;  
+.video {
+    height: 170px;
 }
 
-
-
-
-
-
-
-
-
-
-.sobre-mi{
-    display: flex;
-    flex-wrap: wrap;   
-    justify-content: space-evenly;
-    align-items: space-evenly;
+/* Seccion de conoceme */
+.cardconoceme {
+    height: 300px;
+    width: 300px;
+    background-color: var(--fondo_cards);
+    border-radius: 10px;
 
 }
 
-.width_sections{
-    padding: 20px;
+li a {
+    all: unset;
+    cursor: pointer;
+    padding: 10px;
+
 
 
 }
-p{
+
+li a:hover {
+    color: var(--fondo_body);
+}
+
+
+p {
     text-align: justify;
 }
+
 h2 {
     text-align: center;
     background-color: var(--fondo_nav);
-    color: whitesmoke;
+    color: var(--font1);
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 li {
-    list-style-type: none !important;
+    list-style-type: none;
     text-align: justify;
+}
+
+h3 {
+    text-align: center;
+    background-color: var(--fondo_titulo);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
 }
