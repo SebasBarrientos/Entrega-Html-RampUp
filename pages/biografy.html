@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tillana:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="../styles/stylebio.css">
 
 </head>
 
@@ -22,8 +22,9 @@
             <input type="checkbox" class="menu_hamburguesa" name="" id="menu_hamburguesa">
             <div class="izq">
                 <ul class="ul_nav">
-                    <li class="li_nav"><a href="./index.html" class="a_nav">Home</a></li>
-                    <li class="li_nav"><a href="./#mis_proyectos" class="a_nav">Mis proyectos</a></li>
+                    <li class="li_nav"><a href="../index.html" class="a_nav">Home</a></li>
+                    <!--  NO FUNCIONA Y NOSE XQ -->
+                    <li class="li_nav"><a href="../index.html/#mis_proyectos" class="a_nav">Mis proyectos</a></li>
                     <li class="li_nav"><a href="biografy.html" class="a_nav">Conoceme</a></li>
                     <li class="li_nav"><a href="#talentos" class="a_nav">Mis talentos</a></li>
                     <li class="li_nav"><a href="#hobbies" class="a_nav">Mis hobbies</a></li>
@@ -33,113 +34,83 @@
     </header>
     <div class="intro">
         <div>
-            <img class="fotoS" src="assets/IMG_1218.jpg" alt="Foto de Sebastian">
+            <img class="fotoS" src="../assets/IMG_1218.jpg" alt="Foto de Sebastian">
         </div>
 
         <div class="titulo">
-            <h1>¡<u>Mi pagina de presentacion</u>!</h1><br>
-            <p class="ptitulo">¡Mi nombre es <i><b>Sebastian Barrientos</b></i>, soy abogado y hace ya dos años que
-                decidi comenzar a programar! </p>
+            <h1>¡<u>Sobre mí</u>!</h1><br>
+            <p class="ptitulo">¡En esta pagina te contare mas sobre de donde vengo, donde me crie y como termine en
+                españa!</p>
         </div>
         <div class="invisible">
             <p>asdasdasd</p>
         </div>
     </div>
-
-    <h2 id="mis_proyectos">Mis proyectos</h2>
-    <div class="cardContainer">
-        <section class="cardpro ">
-            <div class="card-image imgpro1"></div>
-            <div class="texto-card">
-                <h4>Diplomatura en Python en la <a href="https://utn.edu.ar/es/" target="_blank">UTN</a></h4>
-                <p>En este proyecto realice una API a traves de Python, SQL y una interfaz grafica con tkinter. <br>El
-                    objetivo de la app es generar una aplicación donde uno pueda cargar sus rutinas de entrenamiento
-                    en una la base de datos, dando las opciones de modificarlas y eliminarlas si es necesario.</p>
-                <a href="https://github.com/SebasBarrientos/Curso-Python-UTN" target="_blank">Link de Git</a>
+    <div class="prueba">
+        <div class="cuadricula">
+            <h2 id="naci">Donde naci</h2>
+            <div class="cardContainer">
+                <section class="card">
+                    <h3 class="titulocard">Puerto Madryn, Chubut, Argentina</h3>
+                    <div class="img_center">
+                        <img class="imgcard" src="https://adnpositivo.com/wp-content/uploads/2023/08/puerto-madryn.jpg"
+                            alt="Foto de cola de ballena, Puerto Madryn y un lobo marino">
+                    </div>
+                    <p class="texto-card">Naci en donde mis padres se criaron, Puerto madryn, al sur de Argentina. Es un
+                        lugar
+                        hermoso y tranquilo, lleno de naturaleza. Conocido por ser donde la ballena franca austral va a
+                        tener a
+                        sus crias.</p>
+                </section>
             </div>
-        </section>
-
-
-        <section class="cardpro cardVideo">
-            <div class="card-image cardVideo">
-                <video class="video" src="./assets/proyectos/Correcto Funcionamiento de 'La Escaloneta'.mp4" controls
-                    autoplay muted></video>
+        </div>
+        <div class="cuadricula">
+            <h2 id="crie">Donde me crie</h2>
+            <div class="cardContainer">
+                <section class="card">
+                    <h3 class="titulocard">Ciudad Autonoma de Buenos Aires, Argentina</h3>
+                    <div class="img_center">
+                        <img class="imgcard" src="https://adnpositivo.com/wp-content/uploads/2023/08/puerto-madryn.jpg"
+                            alt="Foto de cola de ballena, Puerto Madryn y un lobo marino">
+                    </div>
+                    <p class="texto-card">Al año de que nací, mis padres se mudaron a Buenos Aires donde vivi toda mi
+                        vida,
+                        ants de venir a españa.
+                    </p>
+                </section>
             </div>
-            <div class="texto-card">
-                <h4>Curso de pagina Web con Python dictado por <a href="https://www.coderhouse.com/es/"
-                        target="_blank">Coderhouse</a>
-                </h4>
-                <p>Este proyecto es una página web para la administración interna de una concesionaria a la cual solo
-                    tendrá acceso los empleados tras crearse un usuario. <br> Contiene 2 apps: compra y venta</p>
-                <a href="https://github.com/SebasBarrientos/Trabajo-Final-Consecionaria" target="_blank">Link de Git</a>
+        </div>
+        <div class="cuadricula">
+            <h2>Que estudie</h2>
+            <div class="cardContainer">
+                <section class="card">
+                    <h3 class="titulocard">Abogacia en la Universidad de Buenos Aires (UBA)</h3>
+                    <div class="img_center">
+                        <img class="imgcard" src="https://adnpositivo.com/wp-content/uploads/2023/08/puerto-madryn.jpg"
+                            alt="Foto de cola de ballena, Puerto Madryn y un lobo marino">
+                    </div>
+                    <p class="texto-card">En 2015 comence mis estudios como abogado en la uba, una de las mejores
+                        universidades de argentina. Me recibi a finales del 2020 y tras trabajar en notaria y juzgado,
+                        me di
+                        cuenta que no era lo mio.</p>
+                </section>
             </div>
-        </section>
-
+        </div>
+        <div class="cuadricula">
+            <h2>Como termine en España</h2>
+            <div class="cardContainer">
+                <section class="card">
+                    <h3 class="titulocard">Puerto Madryn, Chubut, Argentina</h3>
+                    <div class="img_center">
+                        <img class="imgcard" src="https://adnpositivo.com/wp-content/uploads/2023/08/puerto-madryn.jpg"
+                            alt="Foto de cola de ballena, Puerto Madryn y un lobo marino">
+                    </div>
+                    <p class="texto-card">En 2021, conoci a Caro y Oscar (un Jack Russel). Hoy estamos casados y juntos
+                        tomamos la decision de venir como un equipo.</p>
+                </section>
+            </div>
+        </div>
     </div>
-    <!-- sobre mi!!!! -->
-
-
-    <h2 id="conoceme">Cosas que me gustan</h2>
-    <div class="cardContainer">
-
-        <section class="cardconoceme">
-            <h3>Pelis que recomiendo</h3>
-            <ol>
-                <li><a href="https://es.wikipedia.org/wiki/Star_Wars" target="_blank">Saga de Star wars hasta la 6</a>
-                </li>
-                <li><a href="https://es.wikipedia.org/wiki/Shrek" target="_blank">Shrek I y II</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/C%C3%B3mo_entrenar_a_tu_drag%C3%B3n_(pel%C3%ADcula)"
-                        target="_blank">Saga de Como entrenar a tu dragon</a></li>
-                <li><a href="./pages/form.html" target="_blank">Preguntame y te recomiendo mas!</a></li>
-            </ol>
-        </section>
-
-        <section class="cardconoceme">
-            <h3>Animes que recomiendo</h3>
-            <ol>
-                <li><a href="https://es.wikipedia.org/wiki/My_Hero_Academia" target="_blank">My Hero Academia</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/Shingeki_no_Kyojin" target="_blank">Shingeki no Kyojin</a>
-                </li>
-                <li><a href="https://es.wikipedia.org/wiki/Naruto" target="_blank">Naruto</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/Dragon_Ball_Z" target="_blank">Dragon Ball Z</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/One_Piece" target="_blank">One Piece</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/Kimetsu_no_Yaiba" target="_blank">Kimetsu no Yaiba</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/Solo_Leveling" target="_blank">Solo Leveling</a></li>
-                <li></li>
-            </ol>
-        </section>
-
-        <section class="cardconoceme">
-            <h3>Clasicos de los videojuegos</h3>
-            <ol>
-                <li><a href="https://es.wikipedia.org/wiki/Call_of_Duty" target="_blank">Call of duty</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/League_of_Legends" target="_blank">League of Legends</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/God_of_War_(franquicia)" target="_blank">God of War</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/Monster_Hunter" target="_blank">Monster Hunter</a></li>
-            </ol>
-        </section>
-
-        </ul>
-        </section>
-
-    </div>
-
-    <h2>Mis talentos</h2>
-    <section id="talentos" class="cardconoceme">
-        <ul>
-            <li>Hacer sushi</li>
-            <li>Cocinar cookies</li>
-            <li>Programar</li>
-            <li>Afilar cuchillos</li>
-            <li>Preparar cafe de especialidad</li>
-            <li>Arreglar cosas</li>
-        </ul>
-    </section>
-    <div class="form">
-        <a href="./pages/form.html">Completa el formulario y mantente actualizado sobre mi!</a>
-    </div>
-
-
 </body>
 
 </html>

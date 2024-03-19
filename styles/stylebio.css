@@ -6,11 +6,11 @@
 }
 
 :root {
-    --fondo_nav: #27374D;
-    --fondo_titulo: #526D82;
-    --fondo_body: #9DB2BF;
-    --fondo_cards: #DDE6ED;
-    --font1: whitesmoke;
+    --fondo_nav: #769FCD;
+    --fondo_titulo: #B9D7EA;
+    --fondo_body: #D6E6F2;
+    --fondo_cards: #F7FBFC;
+    --font1: black;
     --alturaHeader: 30px;
 
 }
@@ -19,7 +19,6 @@ body {
     background-color: var(--fondo_body);
     display: flex;
     flex-direction: column;
-
     font-family: "open sans";
 }
 
@@ -49,20 +48,20 @@ body {
 }
 
 /* segunda opcion para "clickear" */
-.menu_hamburguesa:checked + .izq  {
-   width: 160px; 
-   height:255px;
-   
+.menu_hamburguesa:checked+.izq {
+    width: 160px;
+    height: 255px;
+
 }
+
 .hamburguesa {
     color: var(--font1);
     cursor: pointer;
     border: var(--fondo_nav) solid 3.2px;
-    font-weight: bold;
 }
 
 .izq {
-    
+
     overflow: hidden;
     color: var(--font1);
     width: 100%;
@@ -148,32 +147,65 @@ body {
     width: 100px;
 }
 
-/* Seccion de proyectos */
+/* Seccion de naci */
 .cardContainer {
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
+    
 }
+.card {
 
-.cardpro {
-    height: 390px;
-    width: 600px;
+    width: 700px;
     background-color: var(--fondo_cards);
     border-radius: 10px;
     padding: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     
- 
+
+
 }
+
+.titulocard {
+    background-color: var(--fondo_titulo);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.img_center{
+    display: flex;
+    justify-content: center;
+}
+
+.imgcard {
+
+    width: 600px;
+}
+
+.texto-card {}
+
+
+
+.prueba {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cuadricula {
+    margin: 5px;
+}
+
+
+
 
 .cardVideo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 340px ;
+    width: 340px;
 
 }
 
@@ -186,9 +218,10 @@ body {
 
 }
 
-.texto-card{
+.texto-card {
     padding: 3px;
 }
+
 .imgpro1 {
     background-image: url("../assets/proyectos/App\ API\ MVC.png");
 }
@@ -198,19 +231,7 @@ body {
 }
 
 /* Seccion de conoceme */
-.cardconoceme {
-    height: 300px;
-    width: 300px;
-    background-color: var(--fondo_cards);
-    border-radius: 10px;
 
-}
-
-/* li a {
-    all: unset;
-    cursor: pointer;
-    padding: 10px;
-} */
 
 li a:hover {
     color: var(--fondo_body);
