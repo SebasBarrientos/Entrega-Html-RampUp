@@ -34,7 +34,6 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
     padding: 0 2rem;
 }
 
@@ -43,14 +42,14 @@ body {
 }
 
 .menu_hamburguesa:hover+.izq {
-    width: 160px;
-    height: 255px;
+    width: 170px;
+    height: 275px;
 }
 
 /* segunda opcion para "clickear" */
 .menu_hamburguesa:checked+.izq {
-    width: 160px;
-    height: 255px;
+    width: 170px;
+    height: 275px;
 
 }
 
@@ -61,7 +60,6 @@ body {
 }
 
 .izq {
-
     overflow: hidden;
     color: var(--font1);
     width: 100%;
@@ -102,9 +100,14 @@ body {
 }
 
 .izq:hover {
-    width: 160px;
-    height: 255px;
+    width: 170px;
+    height: 275px;
 }
+ol,
+ul {
+    list-style: none;
+}
+    
 
 /* old .sin-config {
     all: unset;
@@ -147,26 +150,24 @@ body {
     width: 100px;
 }
 
-/* Seccion de naci */
+/* cards */
 .cardContainer {
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
     
 }
 .card {
 
     width: 700px;
+    height: 450px;
     background-color: var(--fondo_cards);
     border-radius: 10px;
     padding: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
-
-
+    justify-content: flex-start;
 }
 
 .titulocard {
@@ -179,16 +180,21 @@ body {
     justify-content: center;
 }
 
-.imgcard {
+.imgcard-apaisada {
 
     width: 600px;
+    height: 350px;
+}
+.imgcard-parada {
+
+    height: 350px;
 }
 
 .texto-card {}
 
 
 
-.prueba {
+.wrap {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -196,45 +202,6 @@ body {
 
 .cuadricula {
     margin: 5px;
-}
-
-
-
-
-.cardVideo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 340px;
-
-}
-
-.card-image {
-    height: 300px;
-    width: 580px;
-    margin-bottom: 15px;
-    background-size: cover;
-    margin-top: 3px;
-
-}
-
-.texto-card {
-    padding: 3px;
-}
-
-.imgpro1 {
-    background-image: url("../assets/proyectos/App\ API\ MVC.png");
-}
-
-.video {
-    height: 180px;
-}
-
-/* Seccion de conoceme */
-
-
-li a:hover {
-    color: var(--fondo_body);
 }
 
 
@@ -249,17 +216,6 @@ h2 {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
-
-a {
-    text-decoration: none;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
 
 
 h3 {
