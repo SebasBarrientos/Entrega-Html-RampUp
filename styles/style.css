@@ -91,6 +91,9 @@ body {
     justify-content: space-around;
     align-items: flex-start;
     gap: 0.5rem;
+    border-bottom: solid grey 0.1px;
+    border-left: solid grey 0.1px;
+    border-right: solid grey 0.1px;
 
 }
 
@@ -240,7 +243,7 @@ a {
 ol,ul {
     list-style: none;
 }
-li {
+.lista2 {
     padding-top: 10px;
     font-size: large;
     text-align: center;

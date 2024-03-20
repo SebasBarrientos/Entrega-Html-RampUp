@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div>
-        <H1>Formulario de inscripcion</H1>
+        <H1>Ponte en contacto conmigo!</H1>
     </div>
-    <fieldset>
-        <legend>Completa el formulario</legend>
-        <label>Nombre <input type="text"></label>  <br>
-        <label>Apellido <input type="text"></label><br>
-        <label>Mail <input type="email"></label><br>
-        <label>Sobre ti <br><textarea font-family="Arial" font-size="16px" line-height="1.5">...</textarea><br>
-        <label>Sexo </label> <select name="Sexo" id="">
-            <option value="Hombre">Hombre</option>
-            <option value="Mujer">Mujer</option>
-            <option value="Prefiero no decirlo">Prefiero no decirlo</option>
-        </select><br>
-        <label0>¿Quieres recibir informacion semanalmente?</label>
-            <input type="checkbox" name="Si" value="Si"> Si
-            <input type="checkbox" name="No" value="No"> No
-        <br>
-        <br>
-        
-        <button>Enviar</button>
-        <button >Borrar</button>
-    </fieldset>
+    <form>
+        <fieldset>
+            <legend>Completa el formulario</legend>
+            <label>Tu nombre <input type="text"></label> <br>
+            <label>Tu apellido <input type="text"></label><br>
+            <label>Tu email <input type="email"></label><br>
+            <label>Tu telefono <input type="email"></label><br>
+            <label>Sobre ti </label><br>
+            <textarea font-family="Arial" font-size="16px" line-height="1.5">...</textarea><br>
+            <label>Area en la que te desempeñas </label>
+            <select name="Sexo" id="">
+                <option value="IT">IT</option>
+                <option value="Retail">Retail</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Consultoria">Consultoria</option>
+                <option value="Finanzas">Finanzas</option>
+                <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+            </select><br>
+            <label>Prefiero ser contactado por:</label>
+            <input type="checkbox" name="telefono" value="telefono"> Telefono
+            <input type="checkbox" name="email" value="email"> Email
+            <br>
+            <br>
+
+            <input type="submit">
+            <input type="reset">
+
+        </fieldset>
+    </form>
     <footer>
-        <a href="https://www.instagram.com/sebas.barrientos?igsh=aDZ2MXdiaGN2cXNk&utm_source=qr" target="_blank"><small>Nuestro Instagram</small></a><br>
+        <a href="https://www.instagram.com/sebas.barrientos?igsh=aDZ2MXdiaGN2cXNk&utm_source=qr"
+            target="_blank"><small>Nuestro Instagram</small></a><br>
         <a href="https://www.linkedin.com/in/sebasbarrientos/" target="_blank"><small>LinkedIn</small> </a>
     </footer>
 </body>
+
 </html>
