@@ -227,5 +227,23 @@ h3 {
     background-color: var(--fondo_titulo);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: -5px;
+    margin-bottom: 5px;
 
+}
+
+.fin{
+    background-color: var(--fondo_nav);
+    color: var(--fondo_cards);
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.linkFooter{
+    color: var(--fondo_cards);
+    }
+.imgFooter{
+    height: 40px;
 }
